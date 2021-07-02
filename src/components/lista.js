@@ -124,7 +124,7 @@ function Lista() {
                 </button>
               </form>
               <div className={style.containerCards}>
-                <Card idLista={lista.id} />
+                <Card idLista={lista.id} cardCreate={tituloCard} />
                 <form className={style.formEnviar}>
                   <label>Novo Card: </label>
                   <input

@@ -5,7 +5,7 @@ import lixeiraIcon from "../assets/lixeira.png";
 
 import style from "../styles/card.module.css";
 
-function Card({ idLista }) {
+function Card({ idLista , cardCreate}) {
   const [card, setCard] = useState([]);
   const [cardUpdate, setCardUpdate] = useState({ titulo: "", listas_id: "" });
 
@@ -19,7 +19,7 @@ function Card({ idLista }) {
       }
     }
     getCard();
-  }, [cardUpdate, card]);
+  }, [cardUpdate, cardCreate]);
 
   async function handleUpdate(e, idCard, tituloCard, listaId) {
     e.preventDefault();
