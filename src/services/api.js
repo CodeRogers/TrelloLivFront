@@ -1,5 +1,5 @@
 import Axios from "axios";
 
 export default Axios.create({
-  baseURL: 'https://trello-liv-saude.herokuapp.com/'
+  baseURL: process.env.REACT_APP_API_URL
 });
