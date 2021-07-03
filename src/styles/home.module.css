@@ -1,0 +1,247 @@
+* {
+  --primary: #009688;
+  --background: #e0f2f1;
+  color: #2e282a;
+}
+
+.containerList {
+  justify-content: flex-start;
+  height: 92vh;
+  overflow-x: auto;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.containerList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.containerList::-webkit-scrollbar-thumb {
+  background-color: #535353;
+  border-radius: 20px;
+}
+
+.formEnviar {
+  line-height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: hsl(179, 78%, 55%);
+  transition: ease 0.2s;
+}
+
+.formEnviar:hover {
+  background-color: hsla(179, 78%, 55%, 0.644);
+}
+
+.formEnviar > input {
+  line-height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.inputEnviar {
+  margin: 0.5em;
+  align-items: center;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.inputEnviar > input:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+}
+
+.inputEnviar > input {
+  width: 12.5em;
+}
+
+.imageIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.listaTittle {
+  font-size: 1.3rem;
+}
+
+.headerList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerList > form > input {
+  width: 8em;
+}
+
+.headerList > form > input:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+}
+
+.form {
+  min-width: 250px;
+  max-height: 25px;
+  padding: 1%;
+  background-color: hsl(179, 78%, 55%);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.form:hover {
+  background-color: #0fb3b0;
+}
+
+.form > input {
+  width: 4em;
+}
+
+.form > input:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+}
+
+.list {
+  justify-content: flex-start;
+  min-width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+}
+
+.listContent {
+  background-color: #ebecf0;
+  color: #2e282a;
+  margin: 5px;
+  padding: 2%;
+  border-radius: 5px;
+  overflow-y: auto;
+  flex: 1;
+  align-self: stretch;
+}
+
+.containerCards {
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.containerCards::-webkit-scrollbar {
+  width: 8px;
+}
+
+.containerCards::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 57%);
+  border-radius: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  max-width: 100vw;
+  height: 8vh;
+  padding-left: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: #e4572e;
+}
+
+.headerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  transition: ease 0.3s;
+}
+
+.headerCard:hover {
+  background-color: hsl(91, 72%, 74%);
+}
+
+.inputCard {
+  font-size: 1rem;
+  width: 8.5em;
+}
+
+.inputCard:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+}
+
+.containerCard {
+  justify-content: start;
+  padding: 3%;
+  background-color: hsl(91, 46%, 65%);
+  border-radius: 5px;
+  border-color: rgb(80, 80, 80);
+  margin: 5px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.editInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.editInfoContainer > input {
+  border-color: seagreen;
+  margin-top: 0.25em;
+  width: 5em;
+}
+
+.editInfoContainer > input:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+}
+.card {
+  display: flex;
+  width: 100%;
+}
+
+.card > form {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: #2e282a;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  transition: ease 0.3s;
+  border-radius: 5px;
+  opacity: 70%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+input {
+  width: 5em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+h1 {
+  margin: 0px;
+  color: #efefef;
+}
