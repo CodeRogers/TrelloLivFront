@@ -38,6 +38,7 @@
 }
 
 .formEnviar > input {
+  color: #e0f2f1;
   line-height: 100%;
   vertical-align: middle;
   width: 100%;
@@ -48,6 +49,7 @@
 }
 
 .inputEnviar {
+  color: #e0f2f1;
   margin: 0.5em;
   align-items: center;
   border-radius: 0px;
@@ -55,6 +57,7 @@
 }
 
 .inputEnviar > input:focus {
+  color: #e0f2f1;
   outline: none;
   border-bottom: 1px solid;
   margin-bottom: -1px;

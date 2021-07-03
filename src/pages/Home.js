@@ -205,26 +205,30 @@ function Home() {
           </div>
         ))}
         <div>
-          <label className={`${style.form} ${style.formEnviar}`}>
-            <div className={style.inputEnviar}>
-              <input
-                placeholder="Nova Lista"
-                onChange={(e) => setTituloLista(e.target.value)}
-                type="text"
-                required
-              ></input>
-            </div>
+          <form>
+            <label className={`${style.form} ${style.formEnviar}`}>
+              <div className={style.inputEnviar}>
+                <input
+                  placeholder="Nova Lista"
+                  onChange={(e) => setTituloLista(e.target.value)}
+                  type="text"
+                  required
+                ></input>
+              </div>
 
-            <button
-              onClick={(e) => handleListaSubmit(e, tituloLista, setTituloLista)}
-            >
-              <img
-                className={`${style.imageIcon} ${style.enviarButton}`}
-                src={directIcon}
-                alt="Inserir"
-              />
-            </button>
-          </label>
+              <button
+                onClick={(e) =>
+                  handleListaSubmit(e, tituloLista, setTituloLista)
+                }
+              >
+                <img
+                  className={`${style.imageIcon} ${style.enviarButton}`}
+                  src={directIcon}
+                  alt="Inserir"
+                />
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </div>
