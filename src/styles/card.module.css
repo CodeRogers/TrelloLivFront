@@ -1,0 +1,17 @@
+.containerCard {
+  justify-content: start;
+  padding: 5%;
+  background-color: rgb(201, 201, 201);
+  border-radius: 5px;
+  border-color: rgb(80, 80, 80);
+  margin: 5px;
+}
+
+.imageIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.card {
+  display: flex;
+}

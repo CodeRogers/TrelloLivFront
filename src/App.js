@@ -1,7 +1,14 @@
-import Home from "./pages/Home";
+import Lista from "./components/lista";
+// import "./styles/reset.css";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <div>
+        <Lista/>
+      </div>
+    </div>
+  );
 }
 
 export default App;
