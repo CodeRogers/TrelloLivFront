@@ -43,12 +43,18 @@ function Home() {
             <div className={style.listContent}>
               <div className={style.headerList}>
                 <form>
-                  <input
-                    onChange={(e) => setTituloLista(e.target.value)}
-                    defaultValue={lista.titulo}
-                    required
-                    className={style.listaTittle}
-                  ></input>
+                  <div>
+                    <label>
+                      <div>
+                        <input
+                          className={style.listaTittle}
+                          onChange={(e) => setTituloLista(e.target.value)}
+                          defaultValue={lista.titulo}
+                          required
+                        ></input>
+                      </div>
+                    </label>
+                  </div>
                 </form>
                 <div>
                   <button
@@ -168,54 +174,58 @@ function Home() {
                       </div>
                     ))}
                 </div>
-                <form className={style.formEnviar}>
-                  <label htmlFor={lista.id}>
-                    <div className={style.inputEnviar}>
-                      <input
-                        id={lista.id}
-                        placeholder="Novo card"
-                        onChange={(e) => setTituloCard(e.target.value)}
-                        type="text"
-                        required
-                      ></input>
-                    </div>
-                  </label>
-                  <button
-                    onClick={(e) =>
-                      handleCardSubmit(e, lista.id, tituloCard, setTituloCard)
-                    }
-                  >
-                    <img
-                      className={`${style.imageIcon} ${style.enviarButton}`}
-                      src={directIcon}
-                      alt="Inserir"
-                    />
-                  </button>
-                </form>
+                <div>
+                  <form className={style.formEnviar}>
+                    <label htmlFor={lista.id}>
+                      <div className={style.inputEnviar}>
+                        <input
+                          id={lista.id}
+                          placeholder="Novo card"
+                          onChange={(e) => setTituloCard(e.target.value)}
+                          type="text"
+                          required
+                        ></input>
+                      </div>
+                    </label>
+                    <button
+                      onClick={(e) =>
+                        handleCardSubmit(e, lista.id, tituloCard, setTituloCard)
+                      }
+                    >
+                      <img
+                        className={`${style.imageIcon} ${style.enviarButton}`}
+                        src={directIcon}
+                        alt="Inserir"
+                      />
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         ))}
-        <label className={`${style.form} ${style.formEnviar}`}>
-          <div className={style.inputEnviar}>
-            <input
-              placeholder="Nova Lista"
-              onChange={(e) => setTituloLista(e.target.value)}
-              type="text"
-              required
-            ></input>
-          </div>
+        <div>
+          <label className={`${style.form} ${style.formEnviar}`}>
+            <div className={style.inputEnviar}>
+              <input
+                placeholder="Nova Lista"
+                onChange={(e) => setTituloLista(e.target.value)}
+                type="text"
+                required
+              ></input>
+            </div>
 
-          <button
-            onClick={(e) => handleListaSubmit(e, tituloLista, setTituloLista)}
-          >
-            <img
-              className={`${style.imageIcon} ${style.enviarButton}`}
-              src={directIcon}
-              alt="Inserir"
-            />
-          </button>
-        </label>
+            <button
+              onClick={(e) => handleListaSubmit(e, tituloLista, setTituloLista)}
+            >
+              <img
+                className={`${style.imageIcon} ${style.enviarButton}`}
+                src={directIcon}
+                alt="Inserir"
+              />
+            </button>
+          </label>
+        </div>
       </div>
     </div>
   );

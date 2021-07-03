@@ -71,21 +71,25 @@
 
 .listaTittle {
   font-size: 1.3rem;
+  width: 7.3em;
+}
+
+.listaTittle:focus {
+  outline: none;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
 }
 
 .headerList {
   display: flex;
   justify-content: space-between;
+  margin: 4px;
+  border-radius: 5px;
+  transition: ease 0.2s;
 }
 
-.headerList > form > input {
-  width: 8em;
-}
-
-.headerList > form > input:focus {
-  outline: none;
-  border-bottom: 1px solid;
-  margin-bottom: -1px;
+.headerList:hover {
+  background-color: #c0c0c0;
 }
 
 .form {
@@ -113,10 +117,8 @@
 
 .list {
   justify-content: flex-start;
-  min-width: 250px;
   height: 100%;
-  display: flex;
-  align-items: flex-start;
+  display: grid;
   align-content: flex-start;
   flex-direction: row;
 }
@@ -126,6 +128,7 @@
   color: #2e282a;
   margin: 5px;
   padding: 2%;
+  min-width: 230px;
   border-radius: 5px;
   overflow-y: auto;
   flex: 1;
@@ -160,7 +163,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  transition: ease 0.3s;
+  transition: ease 0.2s;
 }
 
 .headerCard:hover {
