@@ -227,12 +227,11 @@ button {
   padding: 5px;
   transition: ease 0.3s;
   border-radius: 5px;
-  opacity: 70%;
 }
 
 button:hover {
   cursor: pointer;
-  opacity: 100%;
+  opacity: 70%;
 }
 
 input {
