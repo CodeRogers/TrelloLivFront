@@ -29,18 +29,22 @@
   width: 96%;
   margin: 4px;
   border-radius: 5px;
-  background-color: hsl(179, 78%, 55%);
+  background-color: #e4572e;
   transition: ease 0.2s;
 }
 
 .formEnviar:hover {
-  background-color: hsla(179, 78%, 55%, 0.644);
+  background-color: hsl(14, 100%, 64%);
 }
 
 .formEnviar > input {
   line-height: 100%;
   vertical-align: middle;
   width: 100%;
+}
+
+::placeholder {
+  color: #e0f2f1;
 }
 
 .inputEnviar {
@@ -88,13 +92,13 @@
   min-width: 250px;
   max-height: 25px;
   padding: 1%;
-  background-color: hsl(179, 78%, 55%);
+  background-color: h#e4572e;
   border-radius: 5px;
   margin: 5px;
 }
 
 .form:hover {
-  background-color: #0fb3b0;
+  background-color: hsl(14, 100%, 64%);
 }
 
 .form > input {
@@ -147,8 +151,8 @@
   max-width: 100vw;
   height: 8vh;
   padding-left: 1rem;
-  color: rgb(255, 255, 255);
-  background-color: #e4572e;
+  color: #535353;
+  background-color: hsl(179, 78%, 55%);
 }
 
 .headerCard {
@@ -242,5 +246,5 @@ input {
 
 h1 {
   margin: 0px;
-  color: #efefef;
+  color: #535353;
 }

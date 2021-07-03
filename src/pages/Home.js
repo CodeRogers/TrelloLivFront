@@ -90,62 +90,62 @@ function Home() {
                     .map((card) => (
                       <div key={card.id}>
                         <div className={style.containerCard}>
-                          <div className={style.headerCard}>
-                            <form>
-                              <label>
-                                <div>
-                                  <input
-                                    className={style.inputCard}
-                                    defaultValue={card.titulo}
-                                    onChange={(e) =>
-                                      setCardUpdate({
-                                        ...cardUpdate,
-                                        titulo: e.target.value,
-                                      })
-                                    }
-                                  ></input>
-                                </div>
-                              </label>
-                            </form>
-                            <div>
-                              <button
-                                onClick={(e) =>
-                                  handleCardUpdate(
-                                    e,
-                                    card.id,
-                                    card.titulo,
-                                    card.listas_id,
-                                    cardUpdate,
-                                    setCardUpdate
-                                  )
-                                }
-                              >
-                                <img
-                                  className={style.imageIcon}
-                                  src={editarIcon}
-                                  alt="Editar"
-                                />
-                              </button>
-                              <button
-                                onClick={(e) =>
-                                  handleDeleteCard(
-                                    e,
-                                    card.id,
-                                    card.titulo,
-                                    setCard
-                                  )
-                                }
-                              >
-                                <img
-                                  className={style.imageIcon}
-                                  src={lixeiraIcon}
-                                  alt="Excluir"
-                                />
-                              </button>
+                          <form>
+                            <div className={style.headerCard}>
+                              <div>
+                                <label>
+                                  <div>
+                                    <input
+                                      className={style.inputCard}
+                                      defaultValue={card.titulo}
+                                      onChange={(e) =>
+                                        setCardUpdate({
+                                          ...cardUpdate,
+                                          titulo: e.target.value,
+                                        })
+                                      }
+                                    ></input>
+                                  </div>
+                                </label>
+                              </div>
+                              <div>
+                                <button
+                                  onClick={(e) =>
+                                    handleCardUpdate(
+                                      e,
+                                      card.id,
+                                      card.titulo,
+                                      card.listas_id,
+                                      cardUpdate,
+                                      setCardUpdate
+                                    )
+                                  }
+                                >
+                                  <img
+                                    className={style.imageIcon}
+                                    src={editarIcon}
+                                    alt="Editar"
+                                  />
+                                </button>
+                                <button
+                                  onClick={(e) =>
+                                    handleDeleteCard(
+                                      e,
+                                      card.id,
+                                      card.titulo,
+                                      setCard
+                                    )
+                                  }
+                                >
+                                  <img
+                                    className={style.imageIcon}
+                                    src={lixeiraIcon}
+                                    alt="Excluir"
+                                  />
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div className={style.card}>
-                            <form>
+                            <div className={style.card}>
                               <div className={style.infoContainer}>
                                 <div className={style.editInfoContainer}>
                                   <label>Muda lista por id: </label>
@@ -162,8 +162,8 @@ function Home() {
                                   ></input>
                                 </div>
                               </div>
-                            </form>
-                          </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     ))}
