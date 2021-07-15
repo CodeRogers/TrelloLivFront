@@ -49,7 +49,7 @@ function Home() {
                         <input
                           className={style.listaTittle}
                           onChange={(e) => setTituloLista(e.target.value)}
-                          defaultValue={lista.titulo}
+                          Value={lista.titulo}
                           required
                         ></input>
                       </div>
